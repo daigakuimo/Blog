@@ -2,11 +2,12 @@ import styles from 'styles/container.module.css'
 
 type Props = {
     children?: React.ReactNode;
+    large?: boolean
 }
 
-export default function Container({ children }: Props) {
+export default function Container({ children, large = false }: Props) {
     return (
-        <div className={styles.default}>
+        <div className={large ? styles.large : styles.default}>
             {children}
         </div>
     )
