@@ -14,6 +14,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import { ParsedUrlQuery } from 'querystring'
 import { content, prevNextPost } from 'lib/prev-next-post'
 import Pagination from '@/components/pagination'
+import { CategoryMeta } from '../../types'
 
 interface imageObj {
     url: string
@@ -22,17 +23,12 @@ interface imageObj {
     height: number
 }
 
-interface category {
-    name: string
-    slug: string
-}
-
 type Props = {
     title?: string
     publish?: string
     content?: string
     eyecatch?: imageObj
-    categories?: category[]
+    categories?: CategoryMeta[]
     description?: string
     prevPost: content
     nextPost: content

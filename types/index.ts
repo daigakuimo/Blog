@@ -11,3 +11,8 @@ export interface Post {
   eyecatch: imageObj
 }
 
+export interface CategoryMeta {
+  name: string,
+  id: string,
+  slug: string
+}

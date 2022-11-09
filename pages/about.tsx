@@ -6,6 +6,7 @@ import Hero from '@/components/hero'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "@/components/two-column";
 import Image from "next/image";
 import eyeCatch from 'images/about.jpg'
+import Accordion from "@/components/accordions";
 
 export default function About() {
     return (
@@ -53,6 +54,13 @@ export default function About() {
                         <p>グリッドレイアウトでは、グリッド領域内のアイテムをインライン軸に配置します (グリッドレイアウト内での配置についてはこちら)</p>
 
                         <p>グリッドレイアウトでは、グリッド領域内のアイテムをインライン軸に配置します (グリッドレイアウト内での配置についてはこちら)</p>
+
+                        <h2>FAQ</h2>
+                        <Accordion heading="プログラミングのポイントについて">
+                            <p>
+                                プログラミングのポイントは、作りたいものを作ることです。
+                            </p>
+                        </Accordion>
                     </PostBody>
                 </TwoColumnMain>
                 <TwoColumnSidebar>

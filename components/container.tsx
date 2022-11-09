@@ -1,7 +1,7 @@
 import styles from 'styles/container.module.css'
 
 type Props = {
-    children?: React.ReactNode;
+    children?: React.ReactNode
     large?: boolean
 }
 
